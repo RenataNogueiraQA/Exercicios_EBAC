@@ -9,15 +9,8 @@
             Dado que eu acesse a página de checkout do portal EBAC
 
             Cenário: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
-            Quando eu informar o "nome"
-            E o "sobrenome"
-            E o "país"
-            E o "endereço"
-            E a "cidade"
-            E o "CEP"
-            E o "telefone"
-            E o "e-mail"
-            Então deve permitir finalizar a compra
+            Quando deixar de preencher algum campo obrigatório marcado com asteriscos
+            Então deve exibir uma mensagem de alerta "Campo obrigatório deve ser preenchido!"
 
             Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
             Quando eu informar o e-mail "111.com.br"
