@@ -10,11 +10,8 @@
             Dado que eu acesse a página de cliente do portal EBAC
 
             Cenário: Seleções de cor, tamanho e quantidade devem ser obrigatórios
-            Quando eu selecionar a cor "branca"
-            E o tamanho "P"
-            E a quantidade "1"
-            E clicar no botão "Comprar"
-            Então deve exibir uma mensagem "Produto adicionado ao carrinho de compra"
+            Quando deixar de preencher algum campo obrigatório
+            Então deve exibir uma mensagem de alerta "Campo obrigatório deve ser preenchido!"
 
             Cenário: Deve permitir apenas 10 produtos por venda
             Quando existirem 10 produtos no carrinho de compra
